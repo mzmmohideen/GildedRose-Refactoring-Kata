@@ -86,11 +86,11 @@ class GildedRose:
 
     @staticmethod
     def create_updater(item):
-        if item.name == "Aged Brie":
+        if "Aged Brie" in item.name:
             return AgedBrie(item)
-        elif item.name == "Backstage passes":
+        elif "Backstage passes" in item.name:
             return BackstagePasses(item)
-        elif item.name == "Sulfuras":
+        elif "Sulfuras" in item.name:
             return Sulfuras(item)
         elif "Conjured" in item.name:
             return ConjuredItem(item)
